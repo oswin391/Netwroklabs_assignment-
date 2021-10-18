@@ -1,19 +1,18 @@
+package inheritance;
 
 public class Class {
-	private int number = 60;
-	class Inner{
-		int innernum = 20;
-		void show(){
-			System.out.println("Inner class"+innernum);
-		}
+	int window;
+	String model;
+	void Car()
+	{
+		window =6;
+		model ="xyx";
+		System.out.println(window);
+		System.out.println(model);
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Class ob = new Class();
-		System.out.println(ob.number);
-		Class.Inner in = ob.new Inner();
-		in.show();
+	void start()
+	{
+		System.out.print("start method of car");
 	}
 
 }
